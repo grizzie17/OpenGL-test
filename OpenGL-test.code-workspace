@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "MSYS",
+		"cmake.cmakePath": "C:/msys64/mingw64/bin/cmake.exe",
+		"cmake.mingwSearchDirs": [
+			"C:\\msys64\\mingw64\\bin"
+		],
+		"cmake.generator": "MinGW Makefiles"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"twxs.cmake",
+			"ms-vscode.cmake-tools"
+		]
+	}
+}

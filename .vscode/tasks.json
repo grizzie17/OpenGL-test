@@ -1,0 +1,48 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build with g++",
+			"command": "g++",
+			"args": [
+				"-g",
+				"${relativeFile}",
+				"-o",
+				"${relativeFileDirname}/${fileBasenameNoExtension}.exe",
+				"-lfreeglut",
+				"-lopengl32"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "x86_64-w64-mingw32-g++.exe build active file",
+			"command": "C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe",
+			"args": [
+				"-g",
+				"${relativeFileDirname}/${fileBasename}",
+				"-L/mingw64/lib",
+				"-lfreeglut",
+				"-lopengl32",
+				"-o",
+				"${relativeFileDirname}/${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}

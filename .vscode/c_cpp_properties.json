@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "name": "wsl",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "defines": [
+                "CONFNAME=wsl",
+                "_DEBUG",
+                "OPENGL",
+                "UNICODE",
+                "LINUX"
+            ],
+            "includePath": [
+                ".",
+                "${workspaceFolder}",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/**/**",
+                "${workspaceFolder}/**/**/**"
+            ]
+        },
+        {
+            "name": "MSYS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "CONFNAME=MSYS",
+                "_DEBUG",
+                "DEVROOT=${workspaceFolder}"
+            ],
+            "includePath": [
+                ".",
+                "${workspaceFolder}",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/**/**",
+                "${workspaceFolder}/**/**/**"
+            ],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "LINUX"
+            ],
+            "includePath": [
+                ".",
+                "${workspaceFolder}",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/**/**",
+                "${workspaceFolder}/**/**/**"
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
